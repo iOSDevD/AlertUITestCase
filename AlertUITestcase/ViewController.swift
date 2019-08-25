@@ -16,5 +16,26 @@ class ViewController: UIViewController {
     }
 
 
+    @IBAction func alert1Tap(_ sender: Any) {
+        showMessage(sender, msg:AlertUIMessageConstants.alert1Message)
+    }
+    
+    @IBAction func alert2Tap(_ sender: Any) {
+        showMessage(sender, msg: AlertUIMessageConstants.alert2Message)
+    }
+    
+    func showMessage(_ sender:Any,msg:String){
+        if let btn = sender as? UIButton {
+            
+            let alert = UIAlertController(title: btn.titleLabel?.text, message: msg, preferredStyle: .alert)
+            
+            let action = UIAlertAction(title: "OK", style: .default, handler: nil)
+            alert.addAction(action)
+            
+            self.present(alert, animated: true, completion: nil)
+            
+        }
+    }
+    
 }
 

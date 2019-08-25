@@ -12,7 +12,20 @@
 		6A5F9C632310DC13000F0210 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A5F9C612310DC13000F0210 /* Main.storyboard */; };
 		6A5F9C652310DC14000F0210 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6A5F9C642310DC14000F0210 /* Assets.xcassets */; };
 		6A5F9C682310DC14000F0210 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6A5F9C662310DC14000F0210 /* LaunchScreen.storyboard */; };
+		6A77150C2312387C00F07300 /* AlertbuttonUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A77150B2312387C00F07300 /* AlertbuttonUITests.swift */; };
+		6AE58FDF2312BB6400FC7A21 /* AlertUIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE58FDE2312BB6400FC7A21 /* AlertUIConstants.swift */; };
+		6AE58FE02312C72E00FC7A21 /* AlertUIConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6AE58FDE2312BB6400FC7A21 /* AlertUIConstants.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		6A77150E2312387C00F07300 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 6A5F9C522310DC13000F0210 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6A5F9C592310DC13000F0210;
+			remoteInfo = AlertUITestcase;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		6A5F9C5A2310DC13000F0210 /* AlertUITestcase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlertUITestcase.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -22,10 +35,21 @@
 		6A5F9C642310DC14000F0210 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6A5F9C672310DC14000F0210 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6A5F9C692310DC14000F0210 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6A7715092312387C00F07300 /* AlertbuttonUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlertbuttonUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A77150B2312387C00F07300 /* AlertbuttonUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertbuttonUITests.swift; sourceTree = "<group>"; };
+		6A77150D2312387C00F07300 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6AE58FDE2312BB6400FC7A21 /* AlertUIConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertUIConstants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		6A5F9C572310DC13000F0210 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6A7715062312387C00F07300 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,6 +63,7 @@
 			isa = PBXGroup;
 			children = (
 				6A5F9C5C2310DC13000F0210 /* AlertUITestcase */,
+				6A77150A2312387C00F07300 /* AlertbuttonUITests */,
 				6A5F9C5B2310DC13000F0210 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -47,6 +72,7 @@
 			isa = PBXGroup;
 			children = (
 				6A5F9C5A2310DC13000F0210 /* AlertUITestcase.app */,
+				6A7715092312387C00F07300 /* AlertbuttonUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -60,8 +86,18 @@
 				6A5F9C642310DC14000F0210 /* Assets.xcassets */,
 				6A5F9C662310DC14000F0210 /* LaunchScreen.storyboard */,
 				6A5F9C692310DC14000F0210 /* Info.plist */,
+				6AE58FDE2312BB6400FC7A21 /* AlertUIConstants.swift */,
 			);
 			path = AlertUITestcase;
+			sourceTree = "<group>";
+		};
+		6A77150A2312387C00F07300 /* AlertbuttonUITests */ = {
+			isa = PBXGroup;
+			children = (
+				6A77150B2312387C00F07300 /* AlertbuttonUITests.swift */,
+				6A77150D2312387C00F07300 /* Info.plist */,
+			);
+			path = AlertbuttonUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -84,6 +120,24 @@
 			productReference = 6A5F9C5A2310DC13000F0210 /* AlertUITestcase.app */;
 			productType = "com.apple.product-type.application";
 		};
+		6A7715082312387C00F07300 /* AlertbuttonUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 6A7715122312387C00F07300 /* Build configuration list for PBXNativeTarget "AlertbuttonUITests" */;
+			buildPhases = (
+				6A7715052312387C00F07300 /* Sources */,
+				6A7715062312387C00F07300 /* Frameworks */,
+				6A7715072312387C00F07300 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				6A77150F2312387C00F07300 /* PBXTargetDependency */,
+			);
+			name = AlertbuttonUITests;
+			productName = AlertbuttonUITests;
+			productReference = 6A7715092312387C00F07300 /* AlertbuttonUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -96,6 +150,10 @@
 				TargetAttributes = {
 					6A5F9C592310DC13000F0210 = {
 						CreatedOnToolsVersion = 10.3;
+					};
+					6A7715082312387C00F07300 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 6A5F9C592310DC13000F0210;
 					};
 				};
 			};
@@ -113,6 +171,7 @@
 			projectRoot = "";
 			targets = (
 				6A5F9C592310DC13000F0210 /* AlertUITestcase */,
+				6A7715082312387C00F07300 /* AlertbuttonUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -128,6 +187,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6A7715072312387C00F07300 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -135,12 +201,30 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AE58FDF2312BB6400FC7A21 /* AlertUIConstants.swift in Sources */,
 				6A5F9C602310DC13000F0210 /* ViewController.swift in Sources */,
 				6A5F9C5E2310DC13000F0210 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		6A7715052312387C00F07300 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6AE58FE02312C72E00FC7A21 /* AlertUIConstants.swift in Sources */,
+				6A77150C2312387C00F07300 /* AlertbuttonUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		6A77150F2312387C00F07300 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 6A5F9C592310DC13000F0210 /* AlertUITestcase */;
+			targetProxy = 6A77150E2312387C00F07300 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		6A5F9C612310DC13000F0210 /* Main.storyboard */ = {
@@ -312,6 +396,42 @@
 			};
 			name = Release;
 		};
+		6A7715102312387C00F07300 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AlertbuttonUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = test.AlertbuttonUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AlertUITestcase;
+			};
+			name = Debug;
+		};
+		6A7715112312387C00F07300 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = AlertbuttonUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = test.AlertbuttonUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = AlertUITestcase;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -329,6 +449,15 @@
 			buildConfigurations = (
 				6A5F9C6D2310DC14000F0210 /* Debug */,
 				6A5F9C6E2310DC14000F0210 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		6A7715122312387C00F07300 /* Build configuration list for PBXNativeTarget "AlertbuttonUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A7715102312387C00F07300 /* Debug */,
+				6A7715112312387C00F07300 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
